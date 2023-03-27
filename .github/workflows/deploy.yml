@@ -1,8 +1,10 @@
 name: Deploy
 
 on:
+  update
   push:
     branches: [master]
+  
 
 jobs:
   build-and-deploy:
@@ -15,7 +17,7 @@ jobs:
           npm install
           npm run build
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: build
