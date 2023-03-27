@@ -8,11 +8,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-20.04
     steps:
-      - name: install
-        run: npm install
-      - name: build
-        run: npm run build
-      - name: Deploy
-        run: npm run deploy
+      - name: install & deploy
+        run: |
+          npm install
+          npm run build
+          npm run deploy
         with:
           node-version: 16
