@@ -12,8 +12,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: install & deploy
-        run: |
-          npm install
-          npm run build
-          npm run deploy
+      - name: install
+        run: npm install
+      - name: build
+        run: npm run build
+      - name: deploy gh-pages
+        run: npm run deploy
