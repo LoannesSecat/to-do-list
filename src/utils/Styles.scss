@@ -54,7 +54,6 @@ body {
       max-height: 25em;
       gap: 0.8rem;
 
-      //Área de "map" ===
       div {
         @extend %flex-row;
         justify-content: space-between;
