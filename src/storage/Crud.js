@@ -1,6 +1,6 @@
-import { v4 as uuid } from "uuid";
 import { toast } from 'react-toastify';
-import { ThereAreData, SetItem, GetItem } from "../utils/LocalStorageHandler";
+import { v4 as uuid } from "uuid";
+import { GetItem, SetItem, ThereAreData } from "../utils/LocalStorageHandler";
 
 const Crud = ({ action, value }) => {
     let list = [];
@@ -45,7 +45,6 @@ const Crud = ({ action, value }) => {
                 break;
 
             default:
-                console.log("Hola")
                 break;
 
         }
